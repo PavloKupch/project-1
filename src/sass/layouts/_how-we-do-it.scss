@@ -1,0 +1,135 @@
+.how {
+  padding-top: 350px;
+  padding-bottom: 50px;
+
+  @include for-size(tablet-landscape) {
+    padding-top: 280px;
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 130px;
+  }
+}
+
+.background {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.bg {
+  background-color: #ffffff;
+  height: 280px;
+  width: 280px;
+  padding: 30px 11px 24px 11px;
+  margin-bottom: 15px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ff6b09;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: calc((100% - 20px) / 2);
+  }
+
+  @include for-size(tablet-landscape) {
+    height: 334px;
+    margin-bottom: 27px;
+
+    &:not(:nth-last-child(n + 3)) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-size(desktop) {
+    height: 396px;
+    width: calc((100% - 40px) / 3);
+    margin-bottom: 20px;
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bg:last-child {
+  margin-bottom: 0;
+}
+
+.title-section {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 800;
+  text-align: center;
+  @include for-size(tablet-landscape) {
+    font-size: 26px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 46px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+}
+
+.title {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-align: center;
+
+  &-text {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    margin: 0;
+    text-align: center;
+    color: #b9b9b9;
+
+    @include for-size(desktop) {
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.08em;
+    }
+  }
+}
+
+.icon-book {
+  display: block;
+  fill: #ff6b09;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.bg:hover .icon-book {
+  fill: #ffffff;
+}
+
+.bg:hover .title,
+.bg:hover .title-text {
+  color: #ffffff;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 32px;
+}
+
+.icon-1 {
+  fill: #ff6b09;
+}
+
+.bg:hover .icon-1,
+.bg:hover .element {
+  fill: #ffffff;
+}

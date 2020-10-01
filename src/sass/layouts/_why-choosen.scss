@@ -1,0 +1,108 @@
+.choosen-section {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    $primary-black-color 75%,
+    $primary-white-color 50%
+  );
+  padding-top: 0;
+  @include for-size(tablet-landscape) {
+    padding-top: 50px;
+    // padding-bottom: 50px;
+  }
+  @include for-size(desktop) {
+    padding-top: 0;
+  }
+}
+.choosen-container {
+  background-color: $primary-white-color;
+  padding: 20px 30px;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  max-width: 1314px;
+
+  @include for-size(tablet-landscape) {
+    padding: 60px 30px 25px;
+  }
+  @include for-size(desktop) {
+    padding: 101px 30px 70px;
+    position: absolute;
+    top: -153px;
+  }
+}
+.choosen-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.choosen-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    width: 180px;
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+
+  @include for-size(tablet-landscape) {
+    text-align: center;
+  }
+}
+.choosen-item {
+  @include for-size(tablet-landscape) {
+    width: calc((100% - 167px) / 2);
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 305px) / 3);
+  }
+}
+.choosen-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.choosen-title-item {
+  position: relative;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.649;
+  letter-spacing: 0.08em;
+  padding-left: 20px;
+  color: $accent-color;
+  margin-bottom: 10px;
+  @include for-size(desktop) {
+    font-size: 20px;
+    line-height: 1.649;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: $accent-color;
+    left: 1px;
+    top: 15px;
+  }
+}
+.choosen-description {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+  color: $primary-black-color;
+
+  @include for-size(desktop) {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+    width: 260px;
+  }
+}

@@ -1,0 +1,332 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  @include for-size(desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 30px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  margin-bottom: 77px;
+
+  @include for-size(tablet-landscape) {
+    margin-bottom: 85px;
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 107%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  fill: $primary-white-color;
+}
+
+.next {
+  right: 2px;
+}
+
+@include for-size(tablet-landscape) {
+  .prev {
+    left: -15px;
+    top: 44%;
+  }
+
+  .next {
+    right: -15px;
+    top: 44%;
+  }
+}
+
+@include for-size(desktop) {
+  .prev {
+    left: 60px;
+  }
+
+  .next {
+    right: 60px;
+  }
+}
+
+.icon-arrow {
+  width: 25px;
+  height: 14px;
+  fill: $accent-color;
+}
+
+.siema {
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  margin-bottom: 20px;
+
+  @include for-size(tablet-landscape) {
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.siema button {
+  position: absolute;
+  top: 104%;
+  border-radius: 50%;
+  border-style: none;
+  color: transparent;
+  width: 54px;
+  height: 54px;
+  z-index: 3;
+
+  @include for-size(tablet-landscape) {
+    top: 110%;
+  }
+
+  &:nth-of-type(1n + 1) {
+    left: 47px;
+    background-image: url(../images/reviews/student-1-1314.jpg);
+
+    @include for-size(tablet-landscape) {
+      left: 60px;
+    }
+
+    @include for-size(desktop) {
+      left: 366px;
+    }
+  }
+
+  &:nth-of-type(1n + 2) {
+    left: 112px;
+    background-image: url(../images/reviews/student-2-1314.jpg);
+
+    @include for-size(tablet-landscape) {
+      left: 144px;
+    }
+
+    @include for-size(desktop) {
+      left: 450px;
+    }
+  }
+
+  &:nth-of-type(1n + 3) {
+    left: 176px;
+    background-image: url(../images/reviews/student-3-1314.jpg);
+
+    @include for-size(tablet-landscape) {
+      left: 228px;
+    }
+
+    @include for-size(desktop) {
+      left: 534px;
+    }
+  }
+
+  &:nth-of-type(1n + 4) {
+    display: none;
+
+    @include for-size(tablet-landscape) {
+      display: inline-block;
+      left: 312px;
+      background-image: url(../images/reviews/student-4-1314.jpg);
+    }
+
+    @include for-size(desktop) {
+      left: 618px;
+    }
+  }
+
+  &:nth-of-type(1n + 5) {
+    display: none;
+
+    @include for-size(tablet-landscape) {
+      display: inline-block;
+      left: 396px;
+      background-image: url(../images/reviews/student-5-1314.jpg);
+    }
+
+    @include for-size(desktop) {
+      left: 702px;
+    }
+  }
+
+  &:nth-of-type(1n + 6) {
+    display: none;
+
+    @include for-size(tablet-landscape) {
+      display: inline-block;
+      left: 480px;
+      background-image: url(../images/reviews/student-6-1314.jpg);
+    }
+
+    @include for-size(desktop) {
+      left: 786px;
+    }
+  }
+
+  &:nth-of-type(1n + 7) {
+    display: none;
+
+    @include for-size(tablet-landscape) {
+      display: inline-block;
+      left: 564px;
+      background-image: url(../images/reviews/student-7-1314.jpg);
+    }
+
+    @include for-size(desktop) {
+      left: 870px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+
+    @include for-size(tablet-landscape) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.slick-slider-item {
+  padding: 20px 20px 30px;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    text-align: start;
+    padding: 40px;
+  }
+
+  @include for-size(desktop) {
+    padding: 50px 82px;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.foto-block {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin-right: 46px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 40px;
+  }
+}
+
+.icon-vk {
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  fill: #436eab;
+
+  @include for-size(tablet-landscape) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.text-block {
+  @include for-size(tablet-landscape) {
+    width: 421px;
+  }
+
+  @include for-size(desktop) {
+    width: 706px;
+  }
+}
+
+.student-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.08em;
+
+  color: $accent-color;
+
+  @include for-size(tablet-landscape) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @include for-size(desktop) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.student-education {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  color: $secondary-text-color;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.214;
+  }
+}
+
+.student-about {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: $black-text-color;
+
+  p {
+    margin: 0;
+  }
+
+  @include for-size(desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.read-more {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  text-decoration-line: underline;
+  color: $accent-color;
+
+  @include for-size(desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
